@@ -231,6 +231,59 @@ a {
 }
 
 
+/* encargos.html ---> */
+
+.encargos h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #3A5A40;
+    padding: 4px 0 4px 0;
+    border: none;
+}
+
+.encargos__form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.encargos__form label {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.encargos__form select,
+.encargos__form input,
+.encargos__form textarea {
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.encargos__form__send-button input {
+    width: 50%;
+    height: 100%;
+    background-color: #588157;
+    color: #fff;
+    border: none;
+}
+
+.encargos__form__send-button input:hover {
+    background-color: #344E41;    
+}
+
+.encargos__form-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 40px;
+    filter: blur(1px);
+}
+
+
+
 
 @media (max-width: 700px) {
 
