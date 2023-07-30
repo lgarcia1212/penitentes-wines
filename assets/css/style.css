@@ -338,21 +338,26 @@ a {
     }
 
     .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 60px;
-    text-align: center;
-    height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60px;
+        padding: 16px 0 16px 0;
+        text-align: center;
+        height: auto;
 }
 
-.encargos__form select,
-.encargos__form input,
-.encargos__form textarea {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 16px;
-}
+    .footer__item {
+        margin-bottom: 24px;
+    }
+
+    .encargos__form select,
+    .encargos__form input,
+    .encargos__form textarea {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 16px;
+    }
 
 }
