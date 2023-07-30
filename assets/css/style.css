@@ -347,4 +347,12 @@ a {
     height: auto;
 }
 
+.encargos__form select,
+.encargos__form input,
+.encargos__form textarea {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
 }
