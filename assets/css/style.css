@@ -1,363 +1,194 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/rubik/RubikDirt-Regular.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost/static/Jost-ExtraLightItalic.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost/static/Jost-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost/static/Jost-Regular.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost/static/Jost-Medium.ttf);
+  font-weight: 400;
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat";
-    font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+  font-weight: 200;
 }
 
-.container-fluid {
-    margin: 0;
-    padding: 0;
-}
-
-
-@font-face {
-    font-family: "Rubik";
-    src: url(../fonts/rubik/RubikDirt-Regular.ttf);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/montserrat/Montserrat-Light.ttf);
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/montserrat/Montserrat-Medium.ttf);
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/montserrat/Montserrat-Bold.ttf);
-    font-weight: 700;
-}
-
-header {
-
-    background: linear-gradient(to left, #344E41, #A3B18A);
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#navbar-li {
-    display: flex;
-    justify-content: flex-end;
+body {
+  background-color: #fafafa;
 }
 
 a {
-    text-decoration: none;
-    font-size: 48px;
+  text-decoration: none;
 }
 
-.nav-link {
-    color: #F3EAED;
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }
 
-.nav-link:hover {
-    color: #e09f3e;
+header {
+  background-image: linear-gradient(to top, #3C6255, #61876E);
+}
+header nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header nav .navbar__logo {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 48px;
+}
+header nav .collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav .collapse .navbar__links a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+header nav .collapse .navbar__links a:hover {
+  color: #A6BB8D;
 }
 
-.collapse {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navbar__logo {
-    color: #F3EAED;
-    font-family: "Rubik";
-    font-size: 56px;
-    margin-bottom: 0;
-}
-
-.navbar-toggler {
-    border: none;
-    font-size: 28px;
-}
-
-.navbar-toggler-icon {
-    background-image: 
-        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 249, 235, 234.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-    ;
-}
-
-.main__imagen-principal {
-    display: block;
-    width: 100%;
-}
-
-.main__imagen-principal img {
-    display: block;
-    width: 100%;
-    object-fit: contain;
+main .main__imagen-principal img {
+  width: 100%;
 }
 
 .mas-vendidos {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
+  width: 100%;
+  margin-top: 60px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .mas-vendidos h2 {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    font-weight: 700;
-    background: linear-gradient ;
-    color: #3A5A40;
-    padding: 4px 0 4px 0;
-    border: none;
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 300;
+  color: #3d3d3d;
+}
+.mas-vendidos .mas-vendidos__cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 48px 0 48px 0;
+}
+.mas-vendidos .mas-vendidos__cards-container__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 48px;
+  box-shadow: 2px 2px 2px 1px #ccc;
+}
+.mas-vendidos .mas-vendidos__cards-container__card:hover {
+  transform: scale(1.15);
+  transition: 0.3s;
+}
+.mas-vendidos .mas-vendidos__cards-container__card img {
+  width: 75%;
+  border-radius: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mas-vendidos .mas-vendidos__cards-container__card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3C6255;
+}
+.mas-vendidos .mas-vendidos__cards-container__card h4 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #61876E;
+}
+.mas-vendidos .mas-vendidos__cards-container__card h5 {
+  font-size: 16px;
+  color: #3C6255;
+}
+.mas-vendidos .mas-vendidos__cards-container__card p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
 }
 
-.mas-vendidos__cards-container {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4px;
-    justify-items: center;
-    align-items: center;
+.pw-tips {
+  margin-top: 60px;
 }
-
-.mas-vendidos__cards-container__card {
-    box-shadow: 1px 1px 12px #ddd;
-    width: 70%;
-    border-radius: 24px;
-}
-
-.mas-vendidos__cards-container__card img {
-    width: 100%;
-    height: 50%;
-    object-fit: contain;
-    border-radius: 48px;
-    max-width: 240px;
-}
-
-.mas-vendidos__cards-container__card h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #588157;
-}
-
-.mas-vendidos__cards-container__card h4 {
-    font-size: 20px;
-    font-weight: 300;
-    color: #000;
-}
-
-.mas-vendidos__cards-container__card h5 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #A3B18A;
-}
-
-.mas-vendidos__cards-container__card p {
-    font-weight: 700;
-    font-size: 28px;
-    color: green;
-    margin-top: 8px;
-}
-
 .pw-tips h2 {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    font-weight: 700;
-    background: linear-gradient ;
-    color: #344E41;
-    padding: 4px 0 4px 0;
-    border: none;
+  font-size: 40px;
+  color: #3d3d3d;
 }
-
-.pw-tips__video-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.pw-tips__video-container h3 {
-    text-align: center;
-    font-size: 20px;
-}
-
-.pw-tips__video-container iframe {
-    display: inline-block;
-    width: 500px;
-    height: 300px;
+.pw-tips .pw-tips__video-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 60px;
-    background: #344E41;
-    color: #DAD7CD;
-    text-align: center;
-    height: 240px;
-    font-size: 12px;
+  margin-top: 60px;
+  padding: 36px 0 36px 0;
+  width: 100%;
+  background-color: #3C6255;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
+.footer__item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: 2px solid #61876E;
+}
 .footer__item h3 {
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 8px;
+  font-size: 20px;
+  margin: 12px 0 12px 0;
 }
-
-.footer__item p {
-    font-size: 16px;
+.footer__redes {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.bi-whatsapp:hover {
-    color: #e09f3e;
-    cursor: pointer;
+.footer__redes__icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.bi-instagram {
-    margin-left: 28px;
-}
-
-.bi-instagram:hover {
-    color: #e09f3e;
-    cursor: pointer;
-}
-
-
-/* encargos.html ---> */
-
-.encargos h2 {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    font-weight: 700;
-    color: #3A5A40;
-    padding: 4px 0 4px 0;
-    border: none;
-}
-
-.encargos__form {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.encargos__form label {
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.encargos__form select,
-.encargos__form input,
-.encargos__form textarea {
-    margin-bottom: 16px;
-    border-radius: 8px;
-}
-
-.encargos__form__send-button input {
-    width: 50%;
-    height: 100%;
-    background-color: #588157;
-    color: #fff;
-    border: none;
-}
-
-.encargos__form__send-button input:hover {
-    background-color: #344E41;    
-}
-
-.encargos__form-img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 40px;
-    filter: blur(1px);
-}
-
-
-
-
-@media (max-width: 700px) {
-
-    .navbar__logo {
-        font-size: 24px;
-    }
-
-    #navbar-li {
-        display: none;
-        justify-content: flex-end;
-    }
-
-    .collapse {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .mas-vendidos h2 {
-        text-align: center;
-        margin-top: 50px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: #344E41;
-        padding-left: 0;
-    }
-    
-    .mas-vendidos__cards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .mas-vendidos__cards-container__card {
-        margin-bottom: 24px;
-    }
-
-
-    /* PW Tips */
-
-    .pw-tips h2 {
-        text-align: center;
-        font-weight: 700;
-        color: #344E41;
-        padding-left: 0;
-    }
-    
-    .pw-tips__video-container iframe {
-        width: 303px;
-        height: 200px;
-        padding-bottom: 24px;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 60px;
-        padding: 16px 0 16px 0;
-        text-align: center;
-        height: auto;
-}
-
-    .footer__item {
-        margin-bottom: 24px;
-    }
-
-    .encargos__form select,
-    .encargos__form input,
-    .encargos__form textarea {
-        width: 90%;
-        margin: auto;
-        margin-bottom: 16px;
-    }
-
-}
+.footer__redes h3 {
+  font-size: 24px;
+  margin-bottom: 36px;
+}/*# sourceMappingURL=style.css.map */
