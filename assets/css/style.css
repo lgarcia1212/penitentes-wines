@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Rubik";
-  src: url(../fonts/rubik/RubikDirt-Regular.ttf);
-  font-weight: 700;
+  font-family: "Sancreek";
+  src: url(../fonts/Sancreek/Sancreek-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
   font-family: "Jost";
@@ -48,7 +48,7 @@ header {
   background-image: linear-gradient(to top, #3C6255, #61876E);
 }
 header nav {
-  height: 100px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -56,8 +56,13 @@ header nav {
 }
 header nav .navbar__logo {
   color: #fff;
-  font-family: Rubik;
+  font-family: "Sancreek";
   font-size: 48px;
+}
+@media screen and (max-width: 520px) {
+  header nav .navbar__logo {
+    font-size: 24px;
+  }
 }
 header nav .collapse {
   display: flex;
@@ -139,18 +144,45 @@ main .main__imagen-principal img {
   font-weight: 700;
   color: #000;
 }
+@media screen and (max-width: 520px) {
+  .mas-vendidos .mas-vendidos__cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mas-vendidos .mas-vendidos__cards-container__card {
+    width: 80%;
+    margin-bottom: 24px;
+  }
+}
 
 .pw-tips {
   margin-top: 60px;
 }
 .pw-tips h2 {
-  font-size: 40px;
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 300;
   color: #3d3d3d;
 }
 .pw-tips .pw-tips__video-container {
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 520px) {
+  .pw-tips .pw-tips__video-container h3 {
+    text-align: center;
+    padding-left: 0;
+    margin-top: 24px;
+  }
+  .pw-tips .pw-tips__video-container .pw-tips__video-container iframe {
+    width: 303px;
+    height: 200px;
+    padding-bottom: 24px;
+  }
 }
 
 .footer {
@@ -163,6 +195,11 @@ main .main__imagen-principal img {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 520px) {
+  .footer {
+    flex-direction: column;
+  }
+}
 .footer__item {
   width: 25%;
   display: flex;
@@ -171,12 +208,20 @@ main .main__imagen-principal img {
   align-items: center;
   border-right: 2px solid #61876E;
 }
+@media screen and (max-width: 520px) {
+  .footer__item {
+    border-right: none;
+    border-bottom: 2px solid #61876E;
+    width: 80%;
+    margin-bottom: 24px;
+  }
+}
 .footer__item h3 {
   font-size: 20px;
   margin: 12px 0 12px 0;
 }
 .footer__redes {
-  width: 25%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

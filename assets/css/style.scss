@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "Rubik";
-    src: url(../fonts/rubik/RubikDirt-Regular.ttf);
-    font-weight: 700;
+    font-family: "Sancreek";
+    src: url(../fonts/Sancreek/Sancreek-Regular.ttf);
+    font-weight: 400;
 }
 
 @font-face {
@@ -66,6 +66,12 @@ $third-color: #A6BB8D;
     padding: 48px 0 48px 0;
 }
 
+@mixin mobile {
+    @media screen and (max-width: 520px) {
+        @include flex-center-horizontal;
+    }
+}
+
 @mixin card {
     @include flex-center-vertical;
     width: 25%;
@@ -128,12 +134,15 @@ a {
 header {
     background-image: linear-gradient(to top, #3C6255, #61876E);
     nav {
-        height: 100px;
+        height: auto;
         @include flex-center-horizontal;
         .navbar__logo {
             color: #fff;
-            font-family: Rubik;
+            font-family: "Sancreek";
             font-size: 48px;
+            @media screen and (max-width: 520px){
+                font-size: 24px;
+            }
         }
         .collapse {
             display: flex;
@@ -165,21 +174,44 @@ main {
         &__card {
             @include card;
         }
+        @media screen and (max-width: 520px){
+            @include flex-center-vertical;
+            &__card {
+                width: 80%;
+                margin-bottom: 24px;
+            }
+        }
     }
 }
 
 .pw-tips {
     margin-top: 60px;
     h2 {
-        font-size: 40px;
+        margin-top: 40px;
+        font-size: 32px;
+        font-weight: 300;
         color: #3d3d3d;
     }
     .pw-tips__video-container {
-        display: flex;
         width: 100%;
-        justify-content: space-evenly;        
+        display: flex;
+        justify-content: space-evenly; 
+        flex-wrap: wrap;
+        @media screen and (max-width: 520px) {
+            h3 {
+                text-align: center;
+                padding-left: 0;
+                margin-top: 24px;
+            }
+            .pw-tips__video-container iframe {
+                width: 303px;
+                height: 200px;
+                padding-bottom: 24px;
+            }
+        }       
     }
 }
+
 
 .footer {
     margin-top: 60px;
@@ -190,6 +222,9 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 520px) {
+        flex-direction: column;        
+    }
     &__item {
         width: 25%;
         display: flex;
@@ -197,13 +232,19 @@ main {
         justify-content: space-evenly;
         align-items: center;
         border-right: 2px solid $second-color;
+        @media screen and (max-width: 520px){
+            border-right: none;
+            border-bottom: 2px solid $second-color;
+            width: 80%;
+            margin-bottom: 24px;
+        }
         h3 {
             font-size: 20px;
             margin: 12px 0 12px 0;
         }
     }
     &__redes {
-        width: 25%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -219,7 +260,6 @@ main {
             margin-bottom: 36px;
         }
     }
-
 }
 
 
