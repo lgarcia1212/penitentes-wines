@@ -81,22 +81,21 @@ main .main__imagen-principal img {
   width: 100%;
 }
 
-.mas-vendidos {
+.card-section {
   width: 100%;
-  margin-top: 60px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.mas-vendidos h2 {
-  margin-top: 40px;
+.card-section h2 {
+  margin-top: 48px;
   font-size: 32px;
   font-weight: 300;
   color: #3d3d3d;
 }
-.mas-vendidos .mas-vendidos__cards-container {
+.card-section .card-section__cards-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -104,54 +103,54 @@ main .main__imagen-principal img {
   justify-content: space-evenly;
   padding: 48px 0 48px 0;
 }
-.mas-vendidos .mas-vendidos__cards-container__card {
+.card-section .card-section__cards-container__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 25%;
-  height: 80%;
+  height: auto;
   background-color: #fff;
-  border-radius: 48px;
-  box-shadow: 2px 2px 2px 1px #ccc;
+  border-radius: 8px;
+  border: 2px solid #ccc;
 }
-.mas-vendidos .mas-vendidos__cards-container__card:hover {
+.card-section .card-section__cards-container__card:hover {
   transform: scale(1.15);
   transition: 0.3s;
 }
-.mas-vendidos .mas-vendidos__cards-container__card img {
+.card-section .card-section__cards-container__card img {
   width: 75%;
   border-radius: 50px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.mas-vendidos .mas-vendidos__cards-container__card h3 {
+.card-section .card-section__cards-container__card h3 {
   font-size: 24px;
   font-weight: 700;
   color: #3C6255;
 }
-.mas-vendidos .mas-vendidos__cards-container__card h4 {
+.card-section .card-section__cards-container__card h4 {
   font-size: 20px;
   font-weight: 300;
   color: #61876E;
 }
-.mas-vendidos .mas-vendidos__cards-container__card h5 {
+.card-section .card-section__cards-container__card h5 {
   font-size: 16px;
   color: #3C6255;
 }
-.mas-vendidos .mas-vendidos__cards-container__card p {
+.card-section .card-section__cards-container__card p {
   font-size: 24px;
   font-weight: 700;
   color: #000;
 }
 @media screen and (max-width: 520px) {
-  .mas-vendidos .mas-vendidos__cards-container {
+  .card-section .card-section__cards-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .mas-vendidos .mas-vendidos__cards-container__card {
+  .card-section .card-section__cards-container__card {
     width: 80%;
     margin-bottom: 24px;
   }
@@ -162,6 +161,7 @@ main .main__imagen-principal img {
 }
 .pw-tips h2 {
   margin-top: 40px;
+  margin-bottom: 24px;
   font-size: 32px;
   font-weight: 300;
   color: #3d3d3d;
@@ -233,4 +233,57 @@ main .main__imagen-principal img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+/* VINOS -----> */
+.main__vinos h2 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* ENCARGOS -----> */
+.main__encargos h2 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.form-section {
+  background-color: #f0f0f0;
+  padding: 40px 0 40px 0;
+}
+
+.main__encargos__form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main__encargos__form label {
+  font-weight: 400;
+}
+.main__encargos__form select, .main__encargos__form input, .main__encargos__form textarea {
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+.main__encargos__form__send-button input {
+  width: 50%;
+  height: 100%;
+  background-color: #61876E;
+  color: #fff;
+  border: none;
+}
+.main__encargos__form__send-button input:hover {
+  background-color: #3C6255;
+}
+.main__encargos__form-img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+  filter: blur(1px);
 }/*# sourceMappingURL=style.css.map */

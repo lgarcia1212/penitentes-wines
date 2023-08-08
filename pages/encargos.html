@@ -35,15 +35,15 @@
         </div>      
     </header>
 
-    <main class="main">
-        <div class="container">
-            <section class="encargos">
-                <div class="row">
-                    <h2>Encargos</h2>
-                </div>
+    <main class="main__encargos">
+        <div class="row">
+            <h2>Encargos</h2>
+        </div>
+        <div class="container-fluid form-section">
+            <section class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <form action="" class="encargos__form">
+                        <form action="" class="main__encargos__form">
                             <div class="row">
                                 <label for="message_options">Asunto</label>
                                 <select name="message_options" id="message_options">
@@ -57,22 +57,18 @@
                                 <label for="message_text">Mensaje</label>
                                 <textarea name="message_text" id="message_text" cols="10000" rows="10"></textarea>
                             </div>
-                            <div class="encargos__form__send-button text-center">
+                            <div class="main__encargos__form__send-button text-center">
                                 <input type="submit" value="Enviar Mensaje">
                             </div>
                         </form>
                     </div>
-                    <div class="d-none d-md-block col-md-6">
-                        <img class="encargos__form-img" src="../assets/img/form-img.jpg" alt="">
-                    </div>
+                    <aside class="d-none d-md-block col-md-6">
+                        <img class="main__encargos__form-img" src="../assets/img/form-img.jpg" alt="">
+                    </aside>
                 </div>
             </section>
         </div>
     </main>
-
-        <aside>
-        </aside>
-    </body>
 
     <footer class="footer">
         <div class="footer__item">

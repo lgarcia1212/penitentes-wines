@@ -47,13 +47,19 @@ $third-color: #A6BB8D;
     align-items: center;
 }
 
+@mixin main-title {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 40px;
+}
+
 @mixin section {
     width: 100%;
-    margin-top: 60px;
     background-color: #f0f0f0;
     @include flex-center-vertical;
     h2 {
-        margin-top: 40px;
+        margin-top: 48px;
         font-size: 32px;
         font-weight: 300;
         color: #3d3d3d;
@@ -66,19 +72,13 @@ $third-color: #A6BB8D;
     padding: 48px 0 48px 0;
 }
 
-@mixin mobile {
-    @media screen and (max-width: 520px) {
-        @include flex-center-horizontal;
-    }
-}
-
 @mixin card {
     @include flex-center-vertical;
     width: 25%;
-    height: 80%;
+    height: auto;
     background-color: #fff;
-    border-radius: 48px;
-    box-shadow: 2px 2px 2px 1px #ccc;
+    border-radius: 8px;
+    border: 2px solid #ccc;
     &:hover {
         transform:scale(1.15);
         transition: 0.3s;
@@ -167,9 +167,9 @@ main {
     }
 }
 
-.mas-vendidos {
+.card-section {
     @include section;
-    .mas-vendidos__cards-container {
+    .card-section__cards-container {
         @include card-container;
         &__card {
             @include card;
@@ -188,6 +188,7 @@ main {
     margin-top: 60px;
     h2 {
         margin-top: 40px;
+        margin-bottom: 24px;
         font-size: 32px;
         font-weight: 300;
         color: #3d3d3d;
@@ -255,4 +256,53 @@ main {
             align-items: center;
         }
 }
+}
+
+/* VINOS -----> */
+
+.main__vinos h2 {
+    @include main-title;
+}
+
+
+/* ENCARGOS -----> */
+
+.main__encargos h2 {
+    @include main-title;
+}
+
+.form-section {
+    background-color: #f0f0f0;
+    padding: 40px 0 40px 0;
+}
+
+.main__encargos__form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    & label {
+        font-weight: 400;
+    }
+    & select,input,textarea {
+        margin-bottom: 16px;
+        border-radius: 8px;
+    }
+    &__send-button input {
+        width: 50%;
+        height: 100%;
+        background-color: $second-color;
+        color: #fff;
+        border: none;
+        &:hover {
+            background-color: $first-color;  
+        }
+    }
+    &-img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 40px;
+        filter: blur(1px);
+    }
 }
