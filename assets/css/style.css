@@ -51,6 +51,7 @@ a {
 
 header {
   background-image: linear-gradient(to top, #3C6255, #61876E);
+  border-bottom: 1px solid #2e4a40;
 }
 header nav {
   height: auto;
