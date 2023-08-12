@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penitentes Wines</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">   
+    <meta name="description" content="Somos PENITENTES WINES. Llevamos a tu mesa los mejores vinos seleccionados por expertos. Envíos en toda Argentina.">
+    <meta name="keywords" content="Vino, Bodega, Vinoteca, Aceite, Oliva, Valle de Uco, Mendoza">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css"> 
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container"> <!-- Navbar -->
             <div class="row">
-            <nav class="navbar navbar-expand-lg"> 
-                    <a href="./index.html">
-                        <h1 class="navbar__logo">PENITENTES WINES</h1>
-                    </a>  
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-hide-links" aria-controls="navbar-hide-links" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>  
+            <nav class="navbar navbar-expand-lg">   
+                <a class="navbar__logo" href="./index.html">PENITENTES WINES</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-hide-links" aria-controls="navbar-hide-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>  
                 <div class="collapse navbar-collapse" id="navbar-hide-links">
                     <div class="navbar__links navbar-nav">
                         <a class="nav-link" href="./index.html">INICIO</a>
@@ -30,33 +30,32 @@
                 </div>
             </nav>
             </div>
-        </div>      
+        </div> <!-- /Navbar -->    
     </header>
 
-    <main class="container-fluid">
-        <div class="main__imagen-principal">
-            <img src="./assets/img/fila-botellas.JPG" alt="Botellas">
+    <main class="container-fluid"> <!-- Main -->  
+        <div class="main__imagen-principal">    
+            <img src="./assets/img/fila-botellas.JPG" alt="">
         </div>
-        
         <section class="card-section">
             <h2>LOS MAS VENDIDOS</h2> 
             <div class="card-section__cards-container">
                 <div class="card-section__cards-container__card">
-                    <img src="./assets/img/bot-1.jpg" alt="Caja Oro">
+                    <img src="./assets/img/las-perdices-ala-colorada.jpg" alt="Caja Oro">
                     <h3>Ala Colorada</h3>
                     <h4>Malbec</h4>
                     <h5>Bodega Las Perdices</h5>
                     <p>$ 1.999,00</p>
                 </div>
                 <div class="card-section__cards-container__card">
-                    <img src="./assets/img/bot-2.jpg" alt="Vino Tionto: Las Perdices - Don Juan (Reserva)">
+                    <img src="./assets/img/la-rural-rutini.jpg" alt="Vino Tionto: Las Perdices - Don Juan (Reserva)">
                     <h3>Rutini</h3>
                     <h4>Cabernet Suavignon</h4> 
                     <h5>Bodega La Rural</h5>
                     <p>$ 2.999,00</p>
                 </div>
                 <div class="card-section__cards-container__card">
-                    <img src="./assets/img/bot-3.jpg" alt="">
+                    <img src="./assets/img/vistalba-autoctono.jpg" alt="">
                     <h3>Autoctono</h3>
                     <h4>Cabernet Franc</h4>
                     <h5>Bodega Vistalba</h5>
@@ -80,9 +79,9 @@
                 </div>       
             </div> 
         </section>
-    </main>
+    </main> <!-- /Main -->  
 
-    <footer class="footer">
+    <footer class="footer">  <!-- Footer -->
         <div class="footer__item">
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
@@ -122,6 +121,6 @@
                 </svg>
             </div> 
         </div>
-    </footer>
+    </footer> <!-- /Footer -->
 </body>
 </html>

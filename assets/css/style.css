@@ -23,6 +23,11 @@
   src: url(../fonts/Jost/static/Jost-Medium.ttf);
   font-weight: 400;
 }
+h1, h2, h3, h4, h5, h6, .h1,
+.h2, .h3, .h4, .h5, .h6 {
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -128,15 +133,18 @@ main .main__imagen-principal img {
   font-size: 24px;
   font-weight: 700;
   color: #3C6255;
+  margin-bottom: 4px;
 }
 .card-section .card-section__cards-container__card h4 {
   font-size: 20px;
   font-weight: 300;
   color: #61876E;
+  margin-bottom: 4px;
 }
 .card-section .card-section__cards-container__card h5 {
   font-size: 16px;
   color: #3C6255;
+  margin-bottom: 12px;
 }
 .card-section .card-section__cards-container__card p {
   font-size: 24px;
@@ -237,6 +245,22 @@ main .main__imagen-principal img {
 
 /* VINOS -----> */
 .main__vinos h2 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* ACCESORIOS -----> */
+.main__accesorios h2 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* PROMOCIONES -----> */
+.main__promociones h2 {
   margin-top: 32px;
   margin-bottom: 32px;
   text-align: center;

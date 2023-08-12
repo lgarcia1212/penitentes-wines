@@ -92,22 +92,29 @@ $third-color: #A6BB8D;
         font-size: 24px;
         font-weight: 700;
         color: $first-color;
+        margin-bottom: 4px;
     }
     h4 {
         font-size: 20px;
         font-weight: 300;
         color: $second-color;
+        margin-bottom: 4px;
     }
     h5 {
         font-size: 16px;
         color: $first-color;
+        margin-bottom: 12px;
     }
     p {
         font-size: 24px;
         font-weight: 700;
         color: #000;
     }
+}
 
+h1,h2,h3,h4,h5,h6,.h1,
+.h2,.h3,.h4,.h5,.h6 {
+    margin: 0;
 }
 
 * {
@@ -265,8 +272,19 @@ main {
 }
 
 
-/* ENCARGOS -----> */
+/* ACCESORIOS -----> */
+.main__accesorios h2 {
+    @include main-title;
+ }
 
+
+/* PROMOCIONES -----> */
+.main__promociones h2 {
+    @include main-title;
+}
+    
+
+/* ENCARGOS -----> */
 .main__encargos h2 {
     @include main-title;
 }
@@ -306,3 +324,4 @@ main {
         filter: blur(1px);
     }
 }
+
