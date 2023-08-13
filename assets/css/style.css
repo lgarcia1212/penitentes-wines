@@ -240,6 +240,7 @@ main .main__imagen-principal img {
 }
 .footer__redes__icons svg:hover {
   color: #A6BB8D;
+  cursor: pointer;
 }
 
 /* VINOS -----> */

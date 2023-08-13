@@ -259,6 +259,7 @@ main {
             align-items: center;
             & svg:hover {
                 color: $third-color;
+                cursor: pointer;
             }
         }
 }
