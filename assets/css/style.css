@@ -50,38 +50,61 @@ a {
   padding: 0;
 }
 
-header {
+.header {
   background-image: linear-gradient(to top, #3C6255, #61876E);
   border-bottom: 1px solid #2e4a40;
 }
-header nav {
+.header__navbar {
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
 }
-header nav .header__navbar__logo {
+.header__navbar__logo {
   color: #fff;
   font-family: "Eczar";
-  font-size: 48px;
+  font-size: 2rem;
 }
-@media screen and (max-width: 520px) {
-  header nav .header__navbar__logo {
+@media screen and (max-width: 991px) {
+  .header__navbar__logo {
     font-size: 24px;
   }
 }
-header nav .collapse {
+.header__navbar__links {
   display: flex;
   justify-content: flex-end;
 }
-header nav .collapse .navbar__links a {
+.header__navbar__links__links-container {
+  display: flex;
+  justify-content: space-around;
+  width: 440px;
+}
+@media screen and (max-width: 991px) {
+  .header__navbar__links__links-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+}
+.header__navbar__links__links-container a {
   color: #fff;
   font-size: 16px;
   font-weight: 300;
 }
-header nav .collapse .navbar__links a:hover {
+.header__navbar__links__links-container a:hover {
   color: #A6BB8D;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 24px;
+}
+.navbar-toggler:hover {
+  border: none;
+  box-shadow: none;
 }
 
 main .main__imagen-principal img {
@@ -102,7 +125,10 @@ main .main__imagen-principal img {
   font-weight: 300;
   color: #3d3d3d;
 }
-.card-section .card-section__cards-container {
+.card-section h2 {
+  text-align: center;
+}
+.card-section__cards-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -110,7 +136,7 @@ main .main__imagen-principal img {
   justify-content: space-evenly;
   padding: 48px 0 48px 0;
 }
-.card-section .card-section__cards-container__card {
+.card-section__cards-container__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,41 +147,41 @@ main .main__imagen-principal img {
   border-radius: 8px;
   border: 2px solid #ccc;
 }
-.card-section .card-section__cards-container__card:hover {
+.card-section__cards-container__card:hover {
   transform: scale(1.15);
   transition: 0.3s;
 }
-.card-section .card-section__cards-container__card img {
+.card-section__cards-container__card img {
   width: 75%;
   border-radius: 50px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.card-section .card-section__cards-container__card h3 {
+.card-section__cards-container__card h3 {
   font-size: 24px;
   font-weight: 700;
   color: #3C6255;
   margin-bottom: 4px;
 }
-.card-section .card-section__cards-container__card h4 {
+.card-section__cards-container__card h4 {
   font-size: 20px;
   font-weight: 300;
   color: #61876E;
   margin-bottom: 4px;
 }
-.card-section .card-section__cards-container__card h5 {
+.card-section__cards-container__card h5 {
   font-size: 16px;
   color: #3C6255;
   margin-bottom: 12px;
 }
-@media screen and (max-width: 520px) {
-  .card-section .card-section__cards-container {
+@media screen and (max-width: 991px) {
+  .card-section__cards-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .card-section .card-section__cards-container__card {
+  .card-section__cards-container__card {
     width: 80%;
     margin-bottom: 24px;
   }
@@ -177,7 +203,7 @@ main .main__imagen-principal img {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 991px) {
   .pw-tips .pw-tips__video-container h3 {
     text-align: center;
     padding-left: 0;
@@ -200,7 +226,7 @@ main .main__imagen-principal img {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 991px) {
   .footer {
     flex-direction: column;
   }
@@ -213,7 +239,7 @@ main .main__imagen-principal img {
   align-items: center;
   border-right: 2px solid #61876E;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 991px) {
   .footer__item {
     border-right: none;
     border-bottom: 2px solid #61876E;
@@ -228,7 +254,7 @@ main .main__imagen-principal img {
   justify-content: space-evenly;
   align-items: center;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 991px) {
   .footer__redes {
     width: 80%;
   }
