@@ -142,7 +142,7 @@ header {
     nav {
         height: auto;
         @include flex-center-horizontal;
-        .navbar__logo {
+        .header__navbar__logo {
             color: #fff;
             font-family: "Eczar";
             font-size: 48px;
