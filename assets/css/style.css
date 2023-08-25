@@ -23,6 +23,12 @@ h1, h2, h3, h4, h5, h6, .h1,
   margin: 0;
 }
 
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #198133;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -142,11 +148,6 @@ main .main__imagen-principal img {
   color: #3C6255;
   margin-bottom: 12px;
 }
-.card-section .card-section__cards-container__card p {
-  font-size: 24px;
-  font-weight: 700;
-  color: #000;
-}
 @media screen and (max-width: 520px) {
   .card-section .card-section__cards-container {
     display: flex;
@@ -245,34 +246,75 @@ main .main__imagen-principal img {
 
 /* VINOS -----> */
 .main__vinos h2 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-align: center;
   font-size: 40px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.card-section h2 {
+  width: 100%;
+  background-color: #f0f0f0;
 }
 
 /* ACCESORIOS -----> */
-.main__accesorios h2 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+.main-accesorios h2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-align: center;
   font-size: 40px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.main-accesorios__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #fff;
+  margin: 60px 0 60px 0;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+.main-accesorios__line img {
+  width: 360px;
+}
+.main-accesorios__line__description {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 12px;
+}
+.main-accesorios__line__description h4 {
+  font-size: 12px;
+}
+.main-accesorios__line__description li {
+  list-style: none;
 }
 
 /* PROMOCIONES -----> */
 .main__promociones h2 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-align: center;
   font-size: 40px;
+  background-color: #fff;
+  width: 100%;
 }
 
 /* ENCARGOS -----> */
 .main__encargos h2 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-align: center;
   font-size: 40px;
+  background-color: #fff;
+  width: 100%;
 }
 
 .form-section {

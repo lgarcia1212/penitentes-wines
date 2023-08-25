@@ -43,10 +43,12 @@ $title-font: 'Eczar';
 }
 
 @mixin main-title {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-align: center;
     font-size: 40px;
+    background-color: #fff;
+    width: 100%;
 }
 
 @mixin section {
@@ -100,16 +102,17 @@ $title-font: 'Eczar';
         color: $first-color;
         margin-bottom: 12px;
     }
-    p {
-        font-size: 24px;
-        font-weight: 700;
-        color: #000;
-    }
 }
 
 h1,h2,h3,h4,h5,h6,.h1,
 .h2,.h3,.h4,.h5,.h6 {
     margin: 0;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color:#198133;
 }
 
 * {
@@ -271,11 +274,46 @@ main {
     @include main-title;
 }
 
+.card-section h2 {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
 
 /* ACCESORIOS -----> */
-.main__accesorios h2 {
+.main-accesorios h2 {
     @include main-title;
  }
+
+ .main-accesorios__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fff;
+    margin: 60px 0 60px 0;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    & img {
+        width: 360px;
+    }
+    &__description {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 12px;
+        & h4 {
+            font-size: 12px;
+        }
+        & li {
+            list-style: none;
+        }
+    }
+ }
+
+
 
 
 /* PROMOCIONES -----> */
