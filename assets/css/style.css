@@ -348,6 +348,26 @@ main .main__imagen-principal img {
   width: 100%;
 }
 
+.main-promociones__first-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .main-promociones__first-section {
+    width: 10opx;
+  }
+}
+.main-promociones__first-section img {
+  width: 400px;
+  max-width: 100%;
+}
+.main-promociones__first-section img:hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+
 /* ENCARGOS -----> */
 .main__encargos h2 {
   padding-top: 32px;
